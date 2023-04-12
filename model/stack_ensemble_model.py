@@ -16,7 +16,7 @@ from sklearn.metrics import accuracy_score
 
 
 
-# Create model
+# The meta learner: a 3-layer MLP
 class FraudMLP(Module):
     def __init__(self, n_inputs):
         super(FraudMLP, self).__init__()
@@ -86,7 +86,6 @@ def evaluate_model(test_dl, model, beta=1.0):
         # Extract the weights using detach to get the numerical values in an ndarray, instead of tensor
         actual = targets.numpy()
         actual = actual.reshape((len(actual), 1))
-        # Round to get the class value i.e. sick vs not sick
         yhat = yhat.round()
         # Store the predictions in the empty lists initialised at the start of the class
         preds.append(yhat)
