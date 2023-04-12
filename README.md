@@ -21,4 +21,5 @@ the text|"F":fraudulent, "NF": otherwise|"yyyymmdd" the issuing date of the repo
 
 ## Model (```model```)
 
-The model ![image]()
+The outline of the model is as follows:
+![image](https://github.com/yxiaoaz/UROP_StackMLP/model outline.png)
