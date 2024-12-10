@@ -1,4 +1,4 @@
-# StackMLP
+# StackMLP: A Meta Classification Model for Financial Text
 
 ## Data Preparation (``` data_fetching```)
 **The raw txt files**
